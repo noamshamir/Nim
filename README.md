@@ -1,10 +1,10 @@
 # Nim
-*A terminal-based versoin of the classic number Nim*
+*A terminal-based versoin of the classic number Nim with a bot that plays perfectly*
 
 ## Table of Contents
-- [Running Nim](#installation)
-- [Playing Nim](#rules)
-- [Algorithm](#algorithm)
+- [Running Nim](#running-nim)
+- [Playing Nim](#playing-nim)
+- [The Winning Algorithm](#the-winning-algorithm)
 
 ## Running Nim
 1. Clone the repository `git clone https://github.com/yourusername/uncle-game.git`
@@ -21,7 +21,7 @@
 - Each turn, the player may remove as many matches from a single row as they wish
 - The game is lost by the player who takes the last match. Effectively, this means that one wins by leaving one match remaining after their turn.
 
-## Algorithm
+## The Winning Algorithm
 _Spoiler alert: this section will reveal the winning strategy_
 <span class="spoiler">Spoiler content goes here.</span>
  <details>
