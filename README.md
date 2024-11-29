@@ -40,5 +40,5 @@ _These same steps are used by my program_
     - We can group all the numbers into pairs by sorting: [1, 1, 1, 2, 2, 4, 4]
     - After removing all the pairs ([1, 1], [2, 2], and [4, 4]) we are left with an extra 1. This means we must take away a 1. One of the rows that has a 1 is the first row. Therefore, our move would be taking away 1 match from row 1 (though we could take a single match from any row with a 1 in its binary representation)
 3. For the program: iterate over every possible next move, and check which produce a result satisfactory for step #2. 
-4. In the endgame, this strategy will fail. Therefore, for situations in which the game will be over in 2 or less moves, one must use common sense.
+4. In the endgame, this strategy will fail; for situations in which the game will be over in 2 or less moves, one must use common sense.
 </details>
