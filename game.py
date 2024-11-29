@@ -32,8 +32,10 @@ class Game:
         for board, move in zip(possible_boards, moves):
             if board.get_remaining_spaces() == 1:
                 return move
+        for board, move in zip(possible_boards, moves):
             if board.is_paired():
                 return move
+            
         return moves[0]
 
     def computer_turn(self):
@@ -49,9 +51,9 @@ class Game:
 
         while not self.is_won:
             if self.turn == 1:
-                self.human_turn()
-            else:
                 self.computer_turn()
+            else:
+                self.human_turn()
             if self.board.get_remaining_spaces() == 0:
                 self.is_won = True
                 self.change_turn()
