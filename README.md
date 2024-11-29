@@ -1,5 +1,5 @@
 # Nim
-*A terminal-based versoin of the classic number Nim with a bot that plays perfectly*
+*A terminal-based versoin of the classic number game Nim with a bot that plays perfectly*
 
 ## Table of Contents
 - [Running Nim](#running-nim)
