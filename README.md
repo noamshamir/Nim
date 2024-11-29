@@ -16,8 +16,7 @@
      if self.turn == 1:
          self.human_turn()
      else:
-         self.computer_turn()```
-
+         self.computer_turn()
 ## Playing Nim
 - While Nim can be played starting with any amount of rows with any amount of matches per row, this version has 4 rows with odd matches in the starting position.
     - Row 1: |
