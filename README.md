@@ -26,8 +26,8 @@ _Spoiler alert: this section will reveal the winning strategy_
 <span class="spoiler"></span>
  <details>
  <summary>Click to reveal the solution</summary>
-
- My computer player's algorithm is based off the winning strategy for Nim. It's simple enough that human's can do it as well.
+ 
+ My computer player's algorithm is based off the winning strategy for Nim. It's simple enough that human's can implement it as well.
  
 ### Steps to implement the strategy
 _These same steps are used by my program_
