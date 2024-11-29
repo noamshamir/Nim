@@ -4,7 +4,7 @@
 ## Table of Contents
 - [Running Nim](#running-nim)
 - [Playing Nim](#playing-nim)
-- [The Winning Algorithm](#the-winning-algorithm)
+- [The Winning Algorithm](#the-winning-strategy)
 
 ## Running Nim
 1. Clone the repository `git clone https://github.com/yourusername/uncle-game.git`
@@ -21,13 +21,14 @@
 - Each turn, the player may remove as many matches from a single row as they wish
 - The game is lost by the player who takes the last match. Effectively, this means that one wins by leaving one match remaining after their turn.
 
-## The Winning Algorithm
+## The Winning Strategy
 _Spoiler alert: this section will reveal the winning strategy_
-<span class="spoiler">Spoiler content goes here.</span>
+<span class="spoiler"></span>
  <details>
  <summary>Click to reveal the solution</summary>
 
- The algorithm is based off the essential strategy for the game of Nim. 
+ My computer player's algorithm is based off the winning strategy for Nim. It's simple enough that human's can do it as well.
+ 
 ### Steps to implement the strategy
 _These same steps are used by my program_
 1. Sort all the rows into powers of two. Examples: 
