@@ -11,7 +11,7 @@
 2. Make sure you have python3 installed
 3. Install the Copy library `pip3 install copy`
 4. Run the main file `python3 game.py`
-5. Additionaly, you can change the player types in the game file by changing the order fo the `human_turn()` and `computer_turn()` in this section of the code:
+5. Additionaly, you can change the types of player 1 and player 2 by setting each player to play wither `human_turn()` or `computer_turn()` in this section of the code:
     ```
      if self.turn == 1:
          self.human_turn()
