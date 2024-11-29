@@ -6,14 +6,12 @@ class Board:
     def __init__(self):
         self.rows = self.get_rows()
 
-
     def get_rows(self):
         rows = []
         rows_amount = int(input("How many rows do you want to play with? "))
         for row_index in range(rows_amount):
             rows.append(Row(int(input(f"How many matches do you want in row {row_index + 1}: "))))
         return rows
-        
                         
     def get_remaining_spaces(self):
         return sum(row.matches for row in self.rows)
