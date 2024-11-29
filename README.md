@@ -11,6 +11,12 @@
 2. Make sure you have python3 installed
 3. Install the Copy library `pip3 install copy`
 4. Run the main file `python3 game.py`
+5. Additionaly, you can change the player types in the game file by changing the order fo the `human_turn()` and `computer_turn()` in this section of the code:
+   - ```
+     if self.turn == 1:
+         self.human_turn()
+     else:
+         self.computer_turn()```
 
 ## Playing Nim
 - While Nim can be played starting with any amount of rows with any amount of matches per row, this version has 4 rows with odd matches in the starting position.
@@ -22,7 +28,7 @@
 - The game is lost by the player who takes the last match. Effectively, this means that one wins by leaving one match remaining after their turn.
 
 ## The Winning Strategy
-_Spoiler alert: this section will reveal the winning strategy_
+_Spoiler alert: this section will reveal the winning strategy. Don't reveal if you want to be beaten by the bot a couple of times, and try to figure out what its doing._
 <span class="spoiler"></span>
  <details>
  <summary>Click to reveal the solution</summary>
