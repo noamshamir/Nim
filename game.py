@@ -1,5 +1,6 @@
 from exceptions import InvalidRowError, InvalidMoveError
 from board import Board
+import random
 
 class Game:
     def __init__(self):
@@ -36,7 +37,7 @@ class Game:
             if board.is_paired():
                 return move
             
-        return moves[0]
+        return moves[random.randint(0, len(moves))]
 
     def computer_turn(self):
         print("\nComputer's turn:")
