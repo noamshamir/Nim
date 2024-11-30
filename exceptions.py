@@ -3,4 +3,3 @@ class InvalidRowError(Exception):
 
 class InvalidMoveError(Exception):
     pass
-

@@ -2,9 +2,8 @@ from exceptions import InvalidMoveError
 import math
 
 class Row:
-    def __init__(self, init_length):
-        self.init_length = init_length
-        self.matches = init_length
+    def __init__(self, length):
+        self.matches = length
 
     def remove_match(self):
         self.matches -= 1

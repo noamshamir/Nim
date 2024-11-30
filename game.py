@@ -15,7 +15,7 @@ class Game:
         print(f"\nPlayer {self.turn}'s turn:")
         while True:
             try:
-                row_choice = int(input("Choose a row to affect (1-4): "))
+                row_choice = int(input(f"Choose a row to affect (1-{len(self.board.rows)}): "))
                 quantity = int(input("Choose how many matches to remove: "))
                 self.board.move(row_choice, quantity)
                 self.board.print_board()
