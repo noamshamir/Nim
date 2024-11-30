@@ -10,7 +10,7 @@ class Board:
         rows = []
         rows_amount = int(input("How many rows do you want to play with? "))
         for row_index in range(rows_amount):
-            rows.append(Row(int(input(f"How many matches do you want in row {row_index + 1}: "))))
+            rows.append(Row(int(input(f"Row {row_index + 1} matches #: "))))
         return rows
                         
     def get_remaining_spaces(self):
