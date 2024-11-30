@@ -47,7 +47,8 @@ class Game:
         self.board.print_board()
     
     def play_game(self):
-        print("Welcome to the Uncle Game!")
+        print("")
+        print("Let's play Nim!")
         self.board.print_board()
 
         while not self.is_won:
