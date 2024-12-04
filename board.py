@@ -10,7 +10,12 @@ class Board:
         rows = []
         rows_amount = int(input("How many rows do you want to play with? "))
         for row_index in range(rows_amount):
-            rows.append(Row(int(input(f"Row {row_index + 1} matches #: "))))
+            while True:
+                try:
+                    rows.append(Row(int(input(f"Row {row_index + 1} matches #: "))))
+                    break
+                except ValueError as e:
+                    print(f"Invalid row match amount: {e}") 
         return rows
                         
     def get_remaining_spaces(self):

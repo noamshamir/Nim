@@ -7,6 +7,7 @@ class Game:
         self.board = Board()
         self.turn = 1
         self.is_won = False
+        self.eval = 0
 
     def change_turn(self):
         self.turn = 2 if self.turn == 1 else 1
@@ -24,7 +25,6 @@ class Game:
                 print(f"Invalid Row: {e}")
             except InvalidMoveError as e:
                 print(f"Invalid Move: {e}")
-
             except ValueError:
                 print("Invalid input. Please enter numbers only.")
 
@@ -32,17 +32,20 @@ class Game:
         possible_boards, moves = self.board.get_next_gen()
         for board, move in zip(possible_boards, moves):
             if board.get_remaining_spaces() == 1:
+                self.eval = 1
                 return move
         for board, move in zip(possible_boards, moves):
             if board.is_paired():
+                self.eval = 1
                 return move
-            
+        self.eval = -1
         return moves[random.randint(0, len(moves))]
 
     def computer_turn(self):
         print("\nComputer's turn:")
         row, quantity = self.best_move()
         print(f"Computer removes {quantity} match(es) from row {row}.")
+        print(f"Computer predicts a score of {self.eval}")
         self.board.move(row, quantity)
         self.board.print_board()
     
