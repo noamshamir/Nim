@@ -39,7 +39,7 @@ class Game:
                 self.eval = 1
                 return move
         self.eval = -1
-        return moves[random.randint(0, len(moves))]
+        return moves[random.randint(0, len(moves)) - 1]
 
     def computer_turn(self):
         print("\nComputer's turn:")
